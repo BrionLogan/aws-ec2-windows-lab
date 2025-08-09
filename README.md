@@ -64,8 +64,6 @@ It was completed from **macOS** using the Microsoft Remote Desktop app, showcasi
 2. RDP connection from macOS – showing Windows desktop with `LabTest` folder and EC2 Instance ID visible  
    ![RDP Connection Screenshot](images/rdp-connection-labtest.png)
 
-3. *(Optional)* IIS default page in browser if you installed IIS  
-   ![IIS Page Screenshot](images/iis-default.png)
 
 ---
 

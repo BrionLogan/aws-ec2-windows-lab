@@ -30,8 +30,8 @@ It was completed from **macOS** using the Microsoft Remote Desktop app, showcasi
   - Kept the default **8 GB gp3 EBS root volume**.  
     *Reasoning:* 8 GB is enough for the operating system and basic testing while keeping storage costs minimal.
 - **Key Pair:**
-  - Generated and downloaded a `.pem` key to decrypt the Windows Administrator password.  
-    *Reasoning:* Secure, key-based authentication is required to connect and prevents password guessing attacks.
+  - Generated and downloaded a `.pem` key during instance creation.  
+    *Reasoning:* This private key is required to decrypt the Windows Administrator password before first connection.
 
 ---
 
@@ -42,9 +42,9 @@ It was completed from **macOS** using the Microsoft Remote Desktop app, showcasi
   - Selected the instance → **Connect** → **RDP Client**.
   - Downloaded the `.rdp` file.  
     *Reasoning:* The `.rdp` file contains preconfigured settings to simplify the connection process.
-  - Decrypted the Administrator password using the `.pem` key.  
-    *Reasoning:* Ensures only authorized users with the correct private key can log in.
-- Opened the `.rdp` file in Microsoft Remote Desktop and logged in successfully.
+  - Clicked **Get Password** → uploaded the `.pem` key file → decrypted the Administrator password.  
+    *Reasoning:* This step ensures that only someone with the correct private key can access the instance.
+- Opened the `.rdp` file in Microsoft Remote Desktop and logged in using the decrypted password.
 
 ---
 
@@ -75,6 +75,8 @@ It was completed from **macOS** using the Microsoft Remote Desktop app, showcasi
 - Windows AMI selection
 - Security group configuration (least privilege)
 - EBS storage basics
+- AWS key pair usage for secure access
+- Decrypting Windows Administrator password before first connection
 - Cross-platform RDP connection
 - Verifying instance functionality through desktop interaction
 
@@ -91,3 +93,4 @@ It was completed from **macOS** using the Microsoft Remote Desktop app, showcasi
 - Enable and configure AWS Systems Manager for agent-based management.
 - Deploy a sample application inside the Windows EC2 instance.
 - Automate instance creation with AWS CLI or Terraform.
+

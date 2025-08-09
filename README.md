@@ -56,7 +56,6 @@ It was completed from **macOS** using the Microsoft Remote Desktop app, showcasi
 ---
 
 ## 📸 Screenshots
-> Add your screenshots to an `/images` folder and update the links below.
 
 1. AWS console – EC2 instance in **running** state  
    <img width="1851" height="1172" alt="Image" src="https://github.com/user-attachments/assets/dcf25731-7ec5-4975-9afc-93cbffabb5d5" />

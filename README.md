@@ -59,7 +59,7 @@ It was completed from **macOS** using the Microsoft Remote Desktop app, showcasi
 > Add your screenshots to an `/images` folder and update the links below.
 
 1. AWS console – EC2 instance in **running** state  
-   ![AWS Console Screenshot](images/aws-console.png)
+   <img width="1851" height="1172" alt="Image" src="https://github.com/user-attachments/assets/dcf25731-7ec5-4975-9afc-93cbffabb5d5" />
 
 2. RDP connection from macOS – showing Windows desktop with `LabTest` folder and EC2 Instance ID visible  
    ![RDP Connection Screenshot](images/rdp-connection-labtest.png)
